@@ -1,3 +1,5 @@
+package academy.devdojo.maratona_java.introducao;
+
 public class Aula03TiposPrimitivosExercicio {
     public static void main(String[] args){
 
