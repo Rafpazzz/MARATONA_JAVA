@@ -10,5 +10,9 @@ public class Aula04Operadores {
         boolean isDesMenorQueVinte = 10 < 20;
         System.out.println("isDesMaiorQueVinte= " + isDesMaiorQueVinte);
         System.out.println("isDesMenorQueVinte= " + isDesMenorQueVinte);
+
+        double bonus = 1800;
+        bonus %= 1000;
+        System.out.println(bonus);
     }
 }
