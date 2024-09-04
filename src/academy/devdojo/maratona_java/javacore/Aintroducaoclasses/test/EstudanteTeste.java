@@ -19,5 +19,9 @@ public class EstudanteTeste {
         System.out.println(estudante1.idade);
         System.out.println(estudante1.nome);
         System.out.println(estudante1.sexo);
+
+        Estudante [] estudante2 = new Estudante[3];
+
+        estudante2[0].nome = "Ana";
     }
 }
