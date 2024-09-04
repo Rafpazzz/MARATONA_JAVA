@@ -12,6 +12,7 @@ public class Aula06EstruturasDeRepericao05 {
                 continue;
             }
             System.out.println("Parcela "+ parcelaCarro + " R$ "+ valorParcela);
+
         }
     }
 }
