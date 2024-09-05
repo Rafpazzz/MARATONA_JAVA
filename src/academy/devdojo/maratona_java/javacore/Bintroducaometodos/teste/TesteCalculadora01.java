@@ -6,6 +6,12 @@ public class TesteCalculadora01 {
     public static void main(String[] args) {
         Calculadora calcular = new Calculadora();
 
-        calcular.somaDoinsNumeros();
+        calcular.multiplicaDoisNumeros(10, 20);
+
+        int resultado = (int)calcular.dividindoDoisNumeros(20,2);
+
+        System.out.println(resultado);
+
+        calcular.imprimeDivisaoDeDoisNumeros(20, 0);
     }
 }
