@@ -12,5 +12,7 @@ public class CalculadoraTeste02 {
         System.out.println("Dntro do CalculadoraTeste02");
         System.out.println(a);
         System.out.println(b);
+
+        System.out.println(calcular.teste(a,b));
     }
 }

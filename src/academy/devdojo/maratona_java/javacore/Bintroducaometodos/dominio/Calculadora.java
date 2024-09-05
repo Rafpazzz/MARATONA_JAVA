@@ -53,4 +53,10 @@ public class Calculadora {
         System.out.println("Num1 " + num1);
         System.out.println("Num2 " + num2);
     }
+
+    public int teste(int num1, int num2){
+        int soma;
+        soma = num1 + num2;
+        return soma;
+    }
 }
