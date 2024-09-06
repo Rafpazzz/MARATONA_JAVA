@@ -2,9 +2,10 @@ package academy.devdojo.maratona_java.introducao;
 
 import academy.devdojo.maratona_java.introducao.dominio.Calculadora;
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Treino09 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
 
         Calculadora calcular = new Calculadora();
         Scanner sc = new Scanner(System.in);
