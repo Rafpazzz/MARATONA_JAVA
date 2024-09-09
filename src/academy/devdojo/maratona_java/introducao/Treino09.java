@@ -43,6 +43,7 @@ public class Treino09 {
                 break;
             default:
                 System.out.println("Valor invalido.");
+                System.out.println("aa ");
 
         }
 
