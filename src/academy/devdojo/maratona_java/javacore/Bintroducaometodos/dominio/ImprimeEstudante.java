@@ -1,6 +1,11 @@
 package academy.devdojo.maratona_java.javacore.Bintroducaometodos.dominio;
 
 public class ImprimeEstudante {
+
+        private String pessoa;
+        private int idade;
+
+
     public void imprime(Pessoa estudante){
 
         System.out.println("==================");
