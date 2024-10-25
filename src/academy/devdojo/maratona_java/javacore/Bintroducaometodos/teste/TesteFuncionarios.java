@@ -5,16 +5,13 @@ import academy.devdojo.maratona_java.javacore.Bintroducaometodos.dominio.Funcion
 public class TesteFuncionarios {
     public static void main(String[] args) {
         Funcionario ficha = new Funcionario();
-        double[] salario = {1450, 1596, 1234};
+        ficha.setNome("Pedro");
+        ficha.setIdade(45);
+        ficha.setSalarios(new double[]{123,3554,345.7});
 
-        ficha.nome= "Adir";
-        ficha.idade = 45;
-        //ficha.salarios = new double[]{1234, 5435, 345.6};
-
-        ficha.salario(salario);
         ficha.imprime();
         System.out.println("=======================");
-        ficha.imprime2();
         ficha.mediaSalarios();
+        System.out.println("Media: " + ficha.getMedia());
     }
 }
