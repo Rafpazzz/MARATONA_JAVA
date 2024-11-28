@@ -30,6 +30,7 @@ public class Calculo_Quanridade_Azulejo_Parede {
         areaAzulejo = alturaAzulejo * larguraAzulejo;
 
         quantidadeAzulejo = areaParede / areaAzulejo;
+        //quantidadeAzulejo = Math.ceil(areaParede / areaAzulejo); (divide e aredonda para cima)
 
 
       if(quantidadeAzulejo%2 == 1 || quantidadeAzulejo%2 == 0) {
