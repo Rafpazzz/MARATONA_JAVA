@@ -1,6 +1,7 @@
 package academy.devdojo.maratona_java.javacore.Lcalssesabstratas.domain;
 
 public class Desenvolvedor extends Funcionario{
+
     public Desenvolvedor(String nome, double salario) {
         super(nome, salario);
     }
