@@ -3,7 +3,7 @@ package academy.devdojo.maratona_java.introducao;
 public class Aula05EstruturasCondicionais04 {
     public static void main(String[] args) {
 
-        int dia = 15;
+        int dia = 4;
 
         switch (dia) {
             case 1:
