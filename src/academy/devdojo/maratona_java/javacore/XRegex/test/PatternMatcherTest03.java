@@ -19,6 +19,7 @@ public class PatternMatcherTest03 {
         //() agrupamento
         // | (ou) o(V|C)0 ovo | côco
         //$ represnta o fin da linha
+        //. -> 1.3 = 123,133,1@3, 1A3.(entre 1 e 3)
         String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
         String texto = "12 0x 0X 0xFFABC 0X10G 0x1";
         Pattern pattern = Pattern.compile(regex);
