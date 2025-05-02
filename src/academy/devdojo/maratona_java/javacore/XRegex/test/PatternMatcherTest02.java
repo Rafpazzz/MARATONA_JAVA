@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class PatternMatcherTest02 {
     public static void main(String[] args) {
+        //Metacaracteres
         // \\d = retorna todos os digitos(números)
         // \\D = retorn tudo o que nao for dígitos
         // \\s = todos os espaços em branco, tambem sao espaços em branco declarados na String ->  (\\t, \\n, \\f, \\r)
@@ -13,7 +14,7 @@ public class PatternMatcherTest02 {
         // \\W = tudo o que nao for no \\w
         String regex = "\\W";
         String texto2 = "ewlk@jr gh_4kjç5 1´~";
-        Pattern pattern = Pattern.compile(regex);
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(texto2);
         System.out.println("Texto:  " + texto2);
         System.out.println("Indice: 0123456789");

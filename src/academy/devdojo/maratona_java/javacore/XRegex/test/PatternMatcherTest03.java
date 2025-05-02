@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class PatternMatcherTest03 {
     public static void main(String[] args) {
+        //Metacaracteres
         // \\d = retorna todos os digitos(números)
         // \\D = retorn tudo o que nao for dígitos
         // \\s = todos os espaços em branco, tambem sao espaços em branco declarados na String ->  (\\t, \\n, \\f, \\r)
@@ -12,6 +13,7 @@ public class PatternMatcherTest03 {
         // \\w = tudo de a-z, digitos e _ (exclue os digitos expeciais)
         // \\W = tudo o que nao for no \\w
         // [] caracter de Renge(pega um renge de caracteres)
+        //Quantificadores
         //? Zero ou uma ocorencia
         //* Zero ou mais  ocorencia
         //+ uma ou mais ocorencias
