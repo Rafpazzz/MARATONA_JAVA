@@ -1,9 +1,14 @@
 package academy.devdojo.maratona_java.introducao;
 
+import java.util.Scanner;
+
 public class Aula05EstruturasCondicionais04 {
     public static void main(String[] args) {
 
-        int dia = 4;
+        int dia;
+        Scanner r = new Scanner(System.in);
+        System.out.println("escreva numero: ");
+        dia = r.nextInt();
 
         switch (dia) {
             case 1:

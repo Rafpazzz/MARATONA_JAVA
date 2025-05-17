@@ -22,7 +22,7 @@ public class BasicFileAttributesTest02 {
         System.out.println("LastAcessTime: " + lastAccessTime);
         System.out.println("ModifileTime: " + modifiedTime);
 
-        //pussui View é utilizado para fazer altereração com o que diponibilizão
+        //pussui View é utilizado para fazer altereração com o que disponibilizão
         BasicFileAttributeView basicFileAttributeView = Files.getFileAttributeView(path, BasicFileAttributeView.class);
         FileTime newCreationTime = FileTime.fromMillis(System.currentTimeMillis());
         basicFileAttributeView.setTimes(modifiedTime, newCreationTime, creationTime);
