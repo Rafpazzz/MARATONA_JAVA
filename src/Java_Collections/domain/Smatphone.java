@@ -27,6 +27,7 @@ public class Smatphone {
         return serialNumber != null && serialNumber.equals(smatphone.serialNumber);
     }
 
+    //Parceiro do EQUALS(), entretanto o hasCode é mais rapido/otimizado.  HasCode é baseicamente gerar um numero aleatorio
     //se x.equals(y) == true, y.hashCode() == x.hashsCode()
     //y.hashCode() == x.hashCode(), não necessarioamente o equals deles deve ser true
     //x.equals(y) == false, o hashCode é diferente

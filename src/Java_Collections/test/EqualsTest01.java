@@ -8,5 +8,6 @@ public class EqualsTest01 {
         Smatphone s2 = new Smatphone("1NE35j", "IPhone");
 
         System.out.println(s1.equals(s2));
+        System.out.println(s1.hashCode());
     }
 }

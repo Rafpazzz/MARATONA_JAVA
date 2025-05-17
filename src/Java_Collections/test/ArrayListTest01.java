@@ -14,7 +14,7 @@ public class ArrayListTest01 {
         a.addLast("gray");
         Object o = a.clone();
         System.out.println(o);
-        a.ensureCapacity(2);
+        a.iterator();
         for(String itens : a) {
             System.out.println(itens);
         }
