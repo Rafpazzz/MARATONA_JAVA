@@ -1,5 +1,6 @@
 package academy.devdojo.maratona_java.Exercicios.test;
 
+import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -66,8 +67,9 @@ public class FusoHorario {
                     "VST - Asia/Ho_Chi_Minh");
             System.out.print("Informe o local que voce que calcular o fuso: ");
             String zone = r.nextLine().toUpperCase();
-            ZonedDateTime dataHora = ZonedDateTime.now(zonas.get(zone));
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss");
+            Instant instantNow = Instant.now();
+            ZonedDateTime dataHora = instantNow.atZone(zonas.get(zone));
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss z");
             String formatada = dataHora.format(formatter);
             System.out.println(formatada);
 
