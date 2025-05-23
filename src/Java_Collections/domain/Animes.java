@@ -2,7 +2,7 @@ package Java_Collections.domain;
 
 import java.util.Objects;
 
-public class Animes {
+public class Animes implements Comparable<Animes>{
     private Long id;
     private String nome;
     private double preco;
@@ -13,6 +13,24 @@ public class Animes {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Animes o) {
+        //retornar negativo se o this for menor que o
+        //se this == o retorna 0
+        //se this > o retorna positivo
+//        if(this.id < o.getId()) {
+//            return -1;
+//        }else if(this.id.equals(o.getId())) {
+//            return 0;
+//        }else {
+//            return 1;
+//        }
+//      return Double.valueOf(preco).compareTo(o.getPreco());
+//        return Double.compare(preco, o.getPreco());
+        //return this.getId().compareTo(o.getId());
+        return this.nome.compareTo(o.nome);
     }
 
     @Override

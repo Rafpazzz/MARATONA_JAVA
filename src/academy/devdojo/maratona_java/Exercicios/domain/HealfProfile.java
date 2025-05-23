@@ -11,7 +11,7 @@ public class HealfProfile {
     private double altura;
     private double peso;
 
-    Calendar data = Calendar.getInstance();
+
 
     public HealfProfile(String nome, char sexo, int dia, int mes, int ano, double altura, double peso) {
         this.nome = nome;
@@ -24,10 +24,14 @@ public class HealfProfile {
     }
 
     public int idade() {
-        int idadePessoa = 0;
-        int tempoDeVida = 0;
-        tempoDeVida = 360*(data.get(Calendar.YEAR)-getAno())-(12*30-(12*30 - getMes()*30 + (30-getDia())));
-        idadePessoa = tempoDeVida  / 360;
+        Calendar data = Calendar.getInstance();
+        int idadePessoa = data.get(Calendar.YEAR) - getAno();
+        int mesAtual = data.get(Calendar.MONTH);
+        int diaAtual = data.get(Calendar.DAY_OF_MONTH);
+
+        if(mesAtual<getMes() || (mesAtual == getMes() && diaAtual<getDia())) {
+            idadePessoa--;
+        }
 
         return idadePessoa;
     }
