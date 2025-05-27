@@ -6,6 +6,12 @@ public class Animes implements Comparable<Animes>{
     private Long id;
     private String nome;
     private double preco;
+    private int quantidade;
+
+    public Animes(Long id, String nome, double preco, int quantidade) {
+        this(id,nome,preco);
+        this.quantidade = quantidade;
+    }
 
     public Animes(Long id, String nome, double preco) {
         Objects.requireNonNull(id);
@@ -28,10 +34,12 @@ public class Animes implements Comparable<Animes>{
 //            return 1;
 //        }
 //      return Double.valueOf(preco).compareTo(o.getPreco());
-//        return Double.compare(preco, o.getPreco());
+//      return Double.compare(preco, o.getPreco());
         //return this.getId().compareTo(o.getId());
         return this.nome.compareTo(o.nome);
     }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -51,8 +59,17 @@ public class Animes implements Comparable<Animes>{
         sb.append("id=").append(id);
         sb.append(", nome='").append(nome).append('\'');
         sb.append(", preco=").append(preco);
+        sb.append(", quantidade=").append(quantidade);
         sb.append('}');
         return sb.toString();
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
