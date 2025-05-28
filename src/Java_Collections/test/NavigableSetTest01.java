@@ -36,5 +36,19 @@ public class NavigableSetTest01 {
             System.out.println(anime);
         }
 
+        //metodos de comparação
+        //lower : retorna o menor dentrocda colecao
+        //floor: retrona o elemento de mesmo valor que voce estapassando, se nao houver retorna o menor  logo em seguida
+        //higher: retorna o maior dentro da coleção
+        //ceiling: retorna o valor em consideração ao que voce esta passando
+
+        Animes animes1 = new Animes(1L, "youyou", 14.5, 6);
+        System.out.println("===============");
+        System.out.println(animes.lower(animes1));
+        System.out.println(animes.floor(animes1));
+        System.out.println(animes.higher(animes1));
+        System.out.println(animes.ceiling(animes1));
+
+
     }
 }
