@@ -1,6 +1,6 @@
 package Java_Collections.domain;
 
-public class Smatphone {
+public class Smatphone  {
     public String serialNumber;
     public String marca;
 

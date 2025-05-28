@@ -40,17 +40,16 @@ public class Animes implements Comparable<Animes>{
     }
 
 
-
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Animes animes = (Animes) o;
-        return Double.compare(preco, animes.preco) == 0 && Objects.equals(id, animes.id) && Objects.equals(nome, animes.nome);
+        return Objects.equals(id, animes.id) && Objects.equals(nome, animes.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
     }
 
     @Override
