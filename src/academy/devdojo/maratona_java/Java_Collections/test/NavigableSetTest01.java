@@ -1,7 +1,7 @@
-package Java_Collections.test;
+package academy.devdojo.maratona_java.Java_Collections.test;
 
-import Java_Collections.domain.Animes;
-import Java_Collections.domain.Smatphone;
+import academy.devdojo.maratona_java.Java_Collections.domain.Animes;
+import academy.devdojo.maratona_java.Java_Collections.domain.Smatphone;
 
 import java.util.Comparator;
 import java.util.NavigableSet;

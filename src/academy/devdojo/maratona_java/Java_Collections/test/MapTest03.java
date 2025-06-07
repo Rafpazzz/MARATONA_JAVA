@@ -1,9 +1,8 @@
-package Java_Collections.test;
+package academy.devdojo.maratona_java.Java_Collections.test;
 
-import Java_Collections.domain.Animes;
-import Java_Collections.domain.Consumidor;
+import academy.devdojo.maratona_java.Java_Collections.domain.Animes;
+import academy.devdojo.maratona_java.Java_Collections.domain.Consumidor;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

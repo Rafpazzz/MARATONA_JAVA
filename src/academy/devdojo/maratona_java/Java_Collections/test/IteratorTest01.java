@@ -1,9 +1,8 @@
-package Java_Collections.test;
+package academy.devdojo.maratona_java.Java_Collections.test;
 
-import Java_Collections.domain.Animes;
+import academy.devdojo.maratona_java.Java_Collections.domain.Animes;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class IteratorTest01 {

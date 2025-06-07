@@ -1,4 +1,4 @@
-package Java_Collections.domain;
+package academy.devdojo.maratona_java.Java_Collections.domain;
 
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package Java_Collections.test;
+package academy.devdojo.maratona_java.Java_Collections.test;
 
-import Java_Collections.domain.Smatphone;
+import academy.devdojo.maratona_java.Java_Collections.domain.Smatphone;
 
 public class EqualsTest01 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package Java_Collections.test;
+package academy.devdojo.maratona_java.Java_Collections.test;
 
-import Java_Collections.domain.Smatphone;
+import academy.devdojo.maratona_java.Java_Collections.domain.Smatphone;
 
 import java.util.ArrayList;
 import java.util.List;
