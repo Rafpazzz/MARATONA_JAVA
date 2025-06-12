@@ -13,6 +13,6 @@ public class ClasseGenericaTest03 {
         List<Barco> barcosDisponiveis = new ArrayList<>(List.of(new Barco("Jetski"), new Barco("Lancha")));
         List <Carro> carrosDisponiveis = new ArrayList<>(List.of(new Carro("Corolla"), new Carro("SW4")));
 
-        RentalService<Carro> rentalService = new RentalService<>()
+        RentalService<Carro> rentalService = new RentalService<>(carrosDisponiveis);
     }
 }
