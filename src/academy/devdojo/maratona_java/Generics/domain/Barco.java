@@ -14,4 +14,8 @@ public class Barco {
         sb.append('}');
         return sb.toString();
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
