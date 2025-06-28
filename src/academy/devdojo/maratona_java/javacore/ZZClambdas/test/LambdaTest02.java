@@ -10,7 +10,7 @@ public class LambdaTest02 {
 
     public static void main(String[] args) {
         List<String> stringList = List.of("Rafael", "Paz");
-        List<Integer> integerList = map(stringList, s -> s.length());
+        List<Integer> integerList = map(stringList, String::length);
         System.out.println(integerList);
         List<String> strings = map(stringList, s -> s.toUpperCase());
         System.out.println(strings);
