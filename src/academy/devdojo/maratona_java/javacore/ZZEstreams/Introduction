@@ -1,0 +1,6 @@
+- Streams é uma interface
+- Sequencia de elementos
+- Temos varias operaçoes
+- São do timo intermadiarisa ou finais
+- Intermediarias: Retorna o proprio stream, ou seja, pode encadear ações filtrar, ordenar.
+- Finais
