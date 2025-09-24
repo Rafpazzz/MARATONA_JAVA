@@ -16,6 +16,7 @@ public class LambdaTest02 {
         System.out.println(strings);
     }
 
+    //O T é o tipo de entrada da funcao e o R é o tipo da saida da minha função
     private static <T,R> List<R> map(List<T> list, Function<T, R> funcTion) {
         List<R> result = new ArrayList<>();
 

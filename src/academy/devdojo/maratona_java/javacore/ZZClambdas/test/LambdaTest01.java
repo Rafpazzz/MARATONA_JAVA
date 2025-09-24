@@ -8,6 +8,7 @@ public class LambdaTest01 {
 
     public static void main(String[] args) {
         List<String> stringList = List.of("Rafael", "Paz");
+        //A interface funcional Consumer aceita um argumento e executa uma ação sobre ele, sem retornar valor.
         forEache(stringList, a -> System.out.println(a));
 
     }

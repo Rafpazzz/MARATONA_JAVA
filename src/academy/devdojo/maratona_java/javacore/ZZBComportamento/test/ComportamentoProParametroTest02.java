@@ -16,8 +16,11 @@ public class ComportamentoProParametroTest02 {
 //                return car.getColor().equals("green");
 //            }
 //        });
+        String color = "red";
+        List<Car> greenCars = filter(carros, car -> car.getColor().equals(color));
+        List<Car> CarFiltered = filtered(carros, "red");
 
-        List<Car> greenCars = filter(carros, car -> car.getColor().equals("green"));
+
 
         System.out.println(greenCars);
     }
@@ -32,4 +35,10 @@ public class ComportamentoProParametroTest02 {
 
         return listCar;
     }
-}
+
+    public static List<Car> filtered(List<Car> car, String color) {
+        List<Car> filtarada = filter(car, a -> a.getColor().equals(color));
+
+        return filtarada;
+    }
+ }
