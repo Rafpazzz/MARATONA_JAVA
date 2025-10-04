@@ -26,17 +26,17 @@ public class StreamTest15 {
         System.out.println(collect);
 
         Map<Category, Set<Promotion>> collect1 = lightNovelList.stream()
-                .collect(groupingBy(LightNovel::getCategory, mapping(StreamTest15::gerPromotion, toSet())));
+                .collect(groupingBy(LightNovel::getCategory, mapping(StreamTest15::getPromotion, toSet())));
 
         System.out.println(collect1);
 
         Map<Category, LinkedHashSet<Promotion>> collect2 = lightNovelList.stream()
-                .collect(groupingBy(LightNovel::getCategory, mapping(StreamTest15::gerPromotion, toCollection(LinkedHashSet::new))));
+                .collect(groupingBy(LightNovel::getCategory, mapping(StreamTest15::getPromotion, toCollection(LinkedHashSet::new))));
 
         System.out.println(collect2);
     }
 
-    private static Promotion gerPromotion(LightNovel ln) {
+    private static Promotion getPromotion(LightNovel ln) {
         return ln.getPrice() < 6 ? Promotion.UNDER_PROMOTION : Promotion.NORMAL_PRICE;
     }
 }
